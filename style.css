@@ -48,10 +48,59 @@
     text-align: center;
 }
 /* header */
+.navbar {
+    position: relative;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom:15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav>li>a:last-child {
+    padding-right:0;
+}
+.container-fluid {
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 /* portfolio */
 .cella{
     height: 200px;
 }
+/* responsive*/
+/* sm */
+@media screen and(min-width:768px){
+
+    
+}
+    
+
+/* md */
+@media screen and(min-width:992px){
+
+        
+
+    
+}
+/* lg */
+@media screen and(min-width:1200px){
+    
+
+}
+
+
 
 
 
