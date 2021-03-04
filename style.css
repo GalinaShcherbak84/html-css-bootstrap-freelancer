@@ -80,6 +80,16 @@ p{
 .font-weight-bold{
     font-weight: bold;
 }
+.padding20{
+    padding: 20px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p {
+    margin: 20px 0 20px;
+}
 /* header */
 .navbar {
     position: relative;
@@ -123,22 +133,39 @@ p{
 .cella{
     height: 200px;
 }
-/* responsive*/
-/* sm */
-@media screen and(min-width:768px){
-    
+/* header-bottom */
+.line1,
+.line2{
+    display: inline-block;
+    height: 4px;
+    width: 40%;
+    background-color: white;
+    border-radius: 3px;
+    position: absolute;
 }
-    
+.line1{
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.line2{
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.container-star{
+    background-color: tomato;
+    position: relative;
+}
+.container-star i{
+    font-size: 40px;
+}
+.avatar{
+    margin-top: 20px;
+}
 
-/* md */
-@media screen and(min-width:992px){
-    
-}
-/* lg */
-@media screen and(min-width:1200px){
-    
 
-}
+
 
 
 
