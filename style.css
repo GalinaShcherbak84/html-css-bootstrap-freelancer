@@ -243,6 +243,12 @@ form .open>.dropdown-toggle.btn-default:hover {
 .location .row div{
     margin:20px 0;
 }
+ul { 
+    padding-inline-start: 0px;
+    
+}
+
+
 /* footer */
 
 
