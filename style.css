@@ -148,7 +148,9 @@ p{
     margin-bottom: 30px;
 }
 .portfolio .line1,
-.portfolio .line2{
+.portfolio .line2,
+.contact-me .line1,
+.contact-me .line2{
     background-color: #2c3e50;
 }
 .portfolio h2{
@@ -163,6 +165,9 @@ p{
     background-color: #1abc9c;
     border-color: white;
     font-weight:bold;
+}
+.about .colonna{
+text-align: left;
 }
 .btn-default:focus, 
 .btn-default:active, 
@@ -180,7 +185,59 @@ p{
     background-color: white;
     border-color: white;
 }
+/* contact-me */
+form{
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 0px;
+}
+.form-control {
+    height: 60px;
+    padding: 6px 0;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #2c3e50;
+    background-color: #fff;
+    background-image: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+form{
+    text-align: left;
+}
 
+form .btn-default {
+    color:white;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    font-weight:bold;
+    margin:20px 0 40px;
+}
+form .btn-default:focus, 
+form .btn-default:active, 
+form .btn-default:hover,
+form .btn-default.active.focus, 
+form .btn-default.active:focus, 
+form .btn-default.active:hover,
+form .btn-default:active.focus, 
+form .btn-default:active:focus, 
+form .btn-default:active:hover, 
+form .open>.dropdown-toggle.btn-default.focus,
+form .open>.dropdown-toggle.btn-default:focus, 
+form .open>.dropdown-toggle.btn-default:hover {
+    color: #1abc9c;
+    background-color: white;
+    border-color: #1abc9c;
+}
 
 
 
