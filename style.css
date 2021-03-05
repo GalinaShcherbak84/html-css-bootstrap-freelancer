@@ -146,7 +146,34 @@ p{
 .cella img{
     width: 100%;
     margin-bottom: 30px;
+    
 }
+.cella img:hover{
+    filter:grayscale(80%);
+
+}
+.cella{
+    position: relative;
+    vertical-align: middle;
+    font-size: 200px;
+    color:white;
+    
+}
+.cella::after{
+    position: absolute;
+    content: "+";
+    line-height: 100%;
+    display: none;
+    padding:15px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 7px black;
+}
+.cella:hover::after{
+    display: block;
+}
+
 .portfolio .line1,
 .portfolio .line2,
 .contact-me .line1,
@@ -159,6 +186,7 @@ p{
 .portfolio .container-star{
     margin-bottom: 20px;
 }
+
 /* about */
 .btn-default {
     color:white;
@@ -184,6 +212,16 @@ text-align: left;
     color: #1abc9c;
     background-color: white;
     border-color: white;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #1abc9c;;
+}
+
+.navbar-default .navbar-toggle {
+    border-color:white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
 /* contact-me */
 form{
