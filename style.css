@@ -238,6 +238,13 @@ form .open>.dropdown-toggle.btn-default:hover {
     background-color: white;
     border-color: #1abc9c;
 }
+/* location */
+
+.location .row div{
+    margin:20px 0;
+}
+/* footer */
+
 
 
 
