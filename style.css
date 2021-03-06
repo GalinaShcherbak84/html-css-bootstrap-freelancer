@@ -72,8 +72,19 @@
 p{
     font-weight: bold;
 }
+body{
+    position: relative;
+}
+
+
 
 /* header */
+
+header.top .container1{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
 .navbar {
     position: relative;
     margin-bottom: 0px;
@@ -110,10 +121,15 @@ p{
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav>li>a {
     color:white;
+    transition: color .5s;
 }
 
 
 /* header-bottom */
+header.bottom{
+    padding-top: 70px;
+}
+
 .line1,
 .line2{
     display: inline-block;
@@ -143,35 +159,40 @@ p{
     margin-top: 20px;
 }
 /* portfolio */
+
 .cella img{
     width: 100%;
     margin-bottom: 30px;
     
 }
-.cella img:hover{
+.cella:hover{
     filter:grayscale(80%);
 
 }
 .cella{
     position: relative;
     vertical-align: middle;
-    font-size: 200px;
     color:white;
+    transition: filter 1s;
+    
     
 }
 .cella::after{
+    font-size: 200px;
     position: absolute;
-    content: "+";
+    content: "\002B";
     line-height: 100%;
-    display: none;
+    display:block;
+    opacity: 0;
     padding:15px;
-    top:50%;
+    top:45%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-shadow: 0 0 7px black;
+    transition: opacity 1s;
 }
 .cella:hover::after{
-    display: block;
+    opacity: 1;
 }
 
 .portfolio .line1,
@@ -193,6 +214,7 @@ p{
     background-color: #1abc9c;
     border-color: white;
     font-weight:bold;
+    transition: color 0.5s;
 }
 .about .colonna{
 text-align: left;
@@ -259,6 +281,7 @@ form .btn-default {
     border-color: #1abc9c;
     font-weight:bold;
     margin:20px 0 40px;
+    transition: background-color 0.5s;
 }
 form .btn-default:focus, 
 form .btn-default:active, 
