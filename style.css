@@ -173,6 +173,7 @@ header.bottom{
 }
 .cella:hover{
     filter:grayscale(80%);
+    cursor: pointer;
 
 }
 .cella{
